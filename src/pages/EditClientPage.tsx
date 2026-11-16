@@ -9,6 +9,7 @@ import {
 import { useEffect, useState, type FormEvent } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
+import NavBar from '../components/NavBar';
 import type { ClientInput } from '../interfaces/Client';
 import { getClient, updateClient } from '../services/ClientsService';
 
@@ -78,6 +79,7 @@ const EditClientPage: React.FC = () => {
         <IonToolbar>
           <IonTitle>Editar cliente</IonTitle>
         </IonToolbar>
+        <NavBar />
       </IonHeader>
       <IonContent className="ion-padding">
         <div className="container">

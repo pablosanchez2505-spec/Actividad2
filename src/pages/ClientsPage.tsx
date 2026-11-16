@@ -8,6 +8,7 @@ import {
 } from '@ionic/react';
 import { useCallback, useEffect, useState } from 'react';
 
+import NavBar from '../components/NavBar';
 import type { Client } from '../interfaces/Client';
 import { deleteClient, getClients } from '../services/ClientsService';
 
@@ -55,6 +56,7 @@ const ClientsPage: React.FC = () => {
         <IonToolbar>
           <IonTitle>Clientes</IonTitle>
         </IonToolbar>
+        <NavBar />
       </IonHeader>
       <IonContent className="ion-padding">
         <div className="container">

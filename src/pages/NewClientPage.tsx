@@ -9,6 +9,7 @@ import {
 import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import NavBar from '../components/NavBar';
 import type { ClientInput } from '../interfaces/Client';
 import { createClient } from '../services/ClientsService';
 
@@ -47,6 +48,7 @@ const NewClientPage: React.FC = () => {
         <IonToolbar>
           <IonTitle>Nuevo cliente</IonTitle>
         </IonToolbar>
+        <NavBar />
       </IonHeader>
       <IonContent className="ion-padding">
         <div className="container">
